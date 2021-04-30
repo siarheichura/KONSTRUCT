@@ -1,0 +1,12 @@
+/*Gamburger menu*/
+
+@media screen and (max-width: 768px) {
+    .nav__list {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
