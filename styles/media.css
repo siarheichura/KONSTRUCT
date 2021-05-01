@@ -1,6 +1,48 @@
 /*Gamburger menu*/
 
+@media screen and (max-width: 1140px) {
+
+    .about__body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__info {
+        max-width: 100%;
+    }
+
+    .proposal__heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proposal__title {
+        margin-bottom: 15px;
+    }
+
+    .proposal__title::before {
+        content: '';
+        position: absolute;
+        top: 120%;
+        left: calc(50% - 25px);
+        width: 50px;
+        height: 2px;
+        background: #00A4E5;
+    }
+
+    .proposal__text {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+}
+
 @media screen and (max-width: 768px) {
+    .header__title {
+        font-size: 38px;
+    }
+
     .nav__list {
         display: none;
     }
@@ -31,7 +73,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 690px) {
 
     .about__container {
         padding: 15px 0 50px;
@@ -47,8 +89,6 @@
     }
 
     .about__card {
-        /*width: 100%;
-        margin: 10px 0;*/
         width: 30%;
         height: 100px;
         margin: 0;
@@ -116,6 +156,10 @@
         margin-bottom: 20px;
     }
 
+    .footer__info-title {
+        margin-bottom: 10px;
+    }
+
     .footer__links-lists {
         justify-content: space-between;
     }
@@ -128,6 +172,10 @@
     .footer__contact {
         margin-bottom: 20px;
         max-width: 100%;
+    }
+
+    .footer__icon-img {
+        width: 200%;
     }
 }
 
