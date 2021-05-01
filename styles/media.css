@@ -8,5 +8,87 @@
     .menu-btn {
         display: block;
     }
+
+    .about__container {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .about__body {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__info {
+        max-width: 78%;
+        margin-bottom: 10px;
+    }
+
+    .about__cards {
+        flex-wrap: wrap;
+    }
 }
+
+@media screen and (max-width: 500px) {
+
+    .about__container {
+        padding: 15px 0 50px;
+    }
+
+    .about__title {
+        margin-bottom: 60px;
+    }
+
+    .about__cards {
+        width: 78%;
+        justify-content: space-between;
+    }
+
+    .about__card {
+        /*width: 100%;
+        margin: 10px 0;*/
+        width: 30%;
+        height: 100px;
+        margin: 0;
+    }
+
+    .about__card-title {
+        width: 50px;
+        font-size: 16px;
+        line-height: 19px;
+    }  
+    
+    .proposal__container {
+        padding-bottom: 0px;
+    }
+
+    .proposal__heading {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proposal__title,
+    .proposal__text {
+        margin-bottom: 15px;
+    }
+
+    .proposal__cards {
+        /*width: 100%;*/
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .proposal__card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
 

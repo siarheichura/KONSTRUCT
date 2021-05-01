@@ -8,17 +8,14 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-    width: 66%;
+    width: 78%;
     margin: 0 auto;
 }
 
@@ -30,7 +27,7 @@ li {
     list-style-type: none;
 }
 
-/*Header*/
+/*** Header ***/
 
 .header {
     width: 100%;
@@ -40,18 +37,13 @@ li {
     background-size: cover;
 }
 
-.header__body {
+.header__container {
     height: 100%;
-    /*padding: 41px 0 71px;*/
-    padding: 5.33vh 0 9.23vh;
+    padding: 41px 0 71px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-}
-
-.header__logo {
-    margin-bottom: 41.27vh;
+    justify-content: space-between;
 }
 
 .header__title {
@@ -59,33 +51,39 @@ li {
     font-size: 50px;
     letter-spacing: 5.70937px;
     color: #FFFFFF;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
 
 .header__subtitle {
-    margin-bottom: 28.74vh;
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
 }
 
-.header__scroll-button {
+.header__scroll-link {
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 3.7px;
     color: #FFFFFF;
-    background: none;
-    border: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
     transition: 0.3s;
 }
 
-.header__scroll-button:hover {
+.header__scroll-link:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
 
-/*Navigation bar*/
+/*** Navigation bar ***/
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+}
 
 .nav__body {
     position: relative;
@@ -102,7 +100,6 @@ li {
 
 .nav__item {
     margin-right: 40px;
-    transition: 0.2s;
 }
 
 .nav__item:last-child {
@@ -115,17 +112,18 @@ li {
     letter-spacing: 1.09091px;
     color: #48555B;
     text-transform: uppercase;
+    transition: 0.2s;
 }
 
-.nav__item:hover {
-    transform: scale(1.1);
+.nav__link:hover {
+    color: #00A4E5;
 }
 
 .menu-btn {
     position: absolute;
     z-index: 1;
     display: none;
-    top: calc(50% - 14px);
+    top: calc(50% - 18px);
     right: 0;
     width: 30px;
     height: 28px;
@@ -169,7 +167,7 @@ li {
 
 .about__title {
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 2.30625px;
@@ -191,6 +189,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .about__info {
@@ -221,20 +220,17 @@ li {
 }
 
 .about__cards {
-    /*padding-top: 30px;*/
     display: flex;
-    max-width: 459px;
-    width: 100%;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .about__card {
-    height: 100%;
-    /*width: 30.5%;*/
+    height: 224px;
     width: 140px;
 }
 
-.about_card-title {
+.about__card-title {
+    width: 100px;
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
@@ -249,6 +245,7 @@ li {
 }
 
 .about__card--manage {
+    margin: 0 20px;
     background: url('../img/backgrounds/manage-card.jpg') no-repeat center center;
     background-size: cover;
 }
@@ -386,10 +383,7 @@ li {
 
 /*** Footer ***/
 
-.footer__content {
-    display: flex;
-    flex-direction: column;
-}
+/*footer signup*/
 
 .footer__signup {
     padding: 30px 0;
@@ -407,7 +401,7 @@ li {
 }
 
 .footer__form-title {
-    margin-right: 70px;
+    margin-right: 50px;
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 0.846154px;
@@ -419,9 +413,11 @@ li {
     height: 40px;
     padding: 10px 98px 10px 16px;
     background: #FFFFFF;
-    border: 1px solid #979797; 
+    border: 1px solid #979797;
     outline: #171819;   
 }
+
+/*footer content*/
 
 .footer__body {
     background: #141A20;
