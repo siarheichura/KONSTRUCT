@@ -1,5 +1,3 @@
-/*Gamburger menu*/
-
 @media screen and (max-width: 1140px) {
 
     .about__body {
@@ -9,6 +7,7 @@
 
     .about__info {
         max-width: 100%;
+        margin-bottom: 10px;
     }
 
     .proposal__heading {
@@ -17,24 +16,53 @@
     }
 
     .proposal__title {
-        margin-bottom: 15px;
+        margin-bottom: 29px;
     }
 
     .proposal__title::before {
-        content: '';
-        position: absolute;
-        top: 120%;
+        top: 150%;
         left: calc(50% - 25px);
-        width: 50px;
-        height: 2px;
-        background: #00A4E5;
     }
 
     .proposal__text {
         max-width: 100%;
         margin-bottom: 15px;
     }
+    
+    .footer__body-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .footer__info {
+        max-width: 65%;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .footer__links {
+        margin-bottom: 20px;
+    }
+
+    .footer__links-lists {
+        justify-content: space-between;
+    }
+
+    .footer__contact {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .footer__contact-address,
+    .footer__contact-tel,
+    .footer__contact-email {
+        margin-bottom: 7px;
+    }
+
+    .footer__icon-img {
+        width: 200%;
+    }
 
 }
 
@@ -51,46 +79,24 @@
         display: block;
     }
 
-    .about__container {
-        width: 100%;
-        margin: 0;
-        align-items: center;
-    }
-
     .about__body {
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
-    .about__info {
-        max-width: 78%;
-        margin-bottom: 10px;
-    }
-
-    .about__cards {
-        flex-wrap: wrap;
-    }
 }
 
 @media screen and (max-width: 690px) {
 
-    .about__container {
-        padding: 15px 0 50px;
-    }
-
-    .about__title {
-        margin-bottom: 60px;
-    }
-
     .about__cards {
-        width: 78%;
+        width: 100%;
         justify-content: space-between;
     }
 
     .about__card {
         width: 30%;
-        height: 100px;
+        height: 120px;
         margin: 0;
     }
 
@@ -99,34 +105,20 @@
         font-size: 16px;
         line-height: 19px;
     }  
-    
-    .proposal__container {
-        padding-bottom: 0px;
-    }
-
-    .proposal__heading {
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .proposal__title,
-    .proposal__text {
-        margin-bottom: 15px;
-    }
 
     .proposal__cards {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .proposal__card {
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    .order__title {
+        font-size: 20px;
     }
 
     .footer__form-group {
@@ -146,37 +138,6 @@
         width: 100%;
     }
 
-    .footer__body-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__info {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer__info-title {
-        margin-bottom: 10px;
-    }
-
-    .footer__links-lists {
-        justify-content: space-between;
-    }
-
-    .footer__links {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer__contact {
-        margin-bottom: 20px;
-        max-width: 100%;
-    }
-
-    .footer__icon-img {
-        width: 200%;
-    }
 }
 
 

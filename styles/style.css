@@ -1,6 +1,4 @@
-/*font-family: 'Antonio', sans-serif;*/
-
-/*Basic configuration*/
+/*** Basic configuration ***/
 
 * {
     margin: 0;
@@ -85,7 +83,7 @@ li {
     border: 1px solid #E6E6E6;
 }
 
-.nav__body {
+.nav__container {
     position: relative;
     padding: 24px 0;
     display: flex;
@@ -159,7 +157,6 @@ li {
 /*** About section ***/
 
 .about__container {
-    /*padding: 58px 0 118px;*/
     padding: 5% 0 11%;
     display: flex;
     flex-direction: column;
@@ -168,7 +165,7 @@ li {
 
 .about__title {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 6%;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 2.30625px;
@@ -200,7 +197,7 @@ li {
 }
 
 .about__info-title {
-    margin-bottom: 30px;
+    margin-bottom: 3%;
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
@@ -222,7 +219,6 @@ li {
 
 .about__cards {
     display: flex;
-    /*justify-content: space-between;*/
 }
 
 .about__card {
@@ -259,14 +255,14 @@ li {
 /*** Proposal section ***/
 
 .proposal__container {
-    padding-bottom: 115px;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
 }
 
 .proposal__heading {
     width: 100%;
-    margin-bottom: 76px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -316,13 +312,12 @@ li {
 }
 
 .proposal__cards {
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .proposal__card {
-    width: 31.38%;
+    width: 32%;
     padding: 38px 22px;
     border: 1px solid #E6E6E6;
 }
@@ -374,8 +369,7 @@ li {
 }
 
 .order__container {
-    /*padding: 24% 37.8% 46%;*/
-    padding: 120px 0 231px;
+    padding: 10% 0 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -383,10 +377,9 @@ li {
 
 .order__title {
     min-width: 350px;
-    margin-bottom: 35px;
+    margin-bottom: 2%;
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
     letter-spacing: 0.15px;
     text-align: center;
     color: #48555B;
@@ -394,7 +387,7 @@ li {
 
 /*** Footer ***/
 
-/*footer signup*/
+/* footer signup */
 
 .footer__signup {
     padding: 30px 0;
@@ -409,7 +402,7 @@ li {
 }
 
 .footer__form-title {
-    margin-right: 50px;
+    margin-right: 40px;
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 0.846154px;
@@ -425,26 +418,26 @@ li {
     outline: #171819;   
 }
 
-/*footer content*/
+/* footer content */
 
 .footer__body {
     background: #141A20;
 }
 
 .footer__body-container {
-    padding: 42px 0 50px;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .footer__info {
-    max-width: 250px;
+    max-width: 210px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .footer__info-title {
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 11px;
     letter-spacing: 0.846154px;
@@ -460,18 +453,18 @@ li {
     color: #FFFFFF;
 }
 
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .footer__links-lists {
     display: flex;
 }
 
 .footer__links-list:nth-child(2) {
     margin: 0 25px;
-}
-
-.footer__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .footer__links-link {
@@ -481,6 +474,11 @@ li {
     letter-spacing: 0.846154px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 0.2s;
+}
+
+.footer__links-link:hover {
+    color: #00A4E5;   
 }
 
 .footer__contact {
@@ -506,11 +504,15 @@ li {
     justify-content: space-between;
 }
 
-.footer__icon-item:hover {
-    transform: scale(1.1);
+.footer__icon-item {
+    transition: 0.2s;
 }
 
-/*footer copyright*/
+.footer__icon-item:hover {
+    transform: scale(1.2);
+}
+
+/* footer copyright */
 
 .footer__copyright {
     background: #171819;
