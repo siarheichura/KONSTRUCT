@@ -1,4 +1,4 @@
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1024px) {
 
     .about__body {
         flex-direction: column;
@@ -7,7 +7,11 @@
 
     .about__info {
         max-width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .about__container {
+        padding-bottom: 70px;
     }
 
     .proposal__heading {
@@ -16,7 +20,7 @@
     }
 
     .proposal__title {
-        margin-bottom: 29px;
+        margin-bottom: 40px;
     }
 
     .proposal__title::before {
@@ -26,49 +30,24 @@
 
     .proposal__text {
         max-width: 100%;
-        margin-bottom: 15px;
-    }
-    
-    .footer__body-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        margin-bottom: 30px;
     }
 
-    .footer__info {
-        max-width: 65%;
-        margin-bottom: 20px;
-        align-items: center;
-    }
-
-    .footer__links {
-        margin-bottom: 20px;
-    }
-
-    .footer__links-lists {
-        justify-content: space-between;
-    }
-
-    .footer__contact {
-        margin-bottom: 20px;
-        max-width: 100%;
-    }
-
-    .footer__contact-address,
-    .footer__contact-tel,
-    .footer__contact-email {
-        margin-bottom: 7px;
-    }
-
-    .footer__icon-img {
-        width: 200%;
-    }
 
 }
 
 @media screen and (max-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     .header__title {
         font-size: 38px;
+    }
+
+    .nav {
+        order: -1;
     }
 
     .nav__list {
@@ -79,33 +58,6 @@
         display: block;
     }
 
-    .about__body {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-@media screen and (max-width: 690px) {
-
-    .about__cards {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .about__card {
-        width: 30%;
-        height: 120px;
-        margin: 0;
-    }
-
-    .about__card-title {
-        width: 50px;
-        font-size: 16px;
-        line-height: 19px;
-    }  
-
     .proposal__cards {
         width: 100%;
         flex-direction: column;
@@ -114,11 +66,7 @@
 
     .proposal__card {
         width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .order__title {
-        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .footer__form-group {
@@ -127,18 +75,72 @@
     }
 
     .footer__form-title {
-        margin: 0;
+        margin: 0 0 20px 0;
     }
 
     .footer__form-input {
-        width: 100%;
+        width: 80%;
     }
 
     .footer__form-group .button {
-        width: 100%;
+        width: 80%;
+    }
+
+    .footer__body-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__info {
+        max-width: 70%;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .footer__links {
+        margin-bottom: 20px;
+    }
+
+    .footer__contact {
+        margin-bottom: 20px;
+        max-width: 60%;
+    }
+
+    .footer__contact-address,
+    .footer__contact-tel,
+    .footer__contact-email {
+        margin-bottom: 10px;
+    }
+
+    .footer__icon-img {
+        width: 200%;
     }
 
 }
 
+    @media screen and (max-width: 600px) {
 
+    .container {
+        width: 90%;
+    }
 
+    .about__title {
+        margin-bottom: 50px;
+    }
+
+    .about__cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about__card {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .order__title {
+        font-size: 20px;
+    }
+
+}
