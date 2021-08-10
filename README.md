@@ -1,5 +1,4 @@
-This is a site for the building company KONSTRUCT.
+#### This layout has a responsive design
+#### Flexbox model was used
 
-In this work I used flexbox for the first time and tried to make a page with responsive design.
-
-https://siarheichura.github.io/KONSTRUCT-building-company/
+https://siarheichura.github.io/KONSTRUCT/
